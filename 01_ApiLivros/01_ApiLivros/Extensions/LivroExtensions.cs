@@ -10,6 +10,7 @@ namespace _01_ApiLivros.Extensions
             services.AddDbContext<LivroContext>(optionsAction: options =>
             {
                 options.UseSqlite(connectionString: "Data Source=db/Livros.db");
+                // options.UseSqlServer(connectionString: "Server=localhost,1200;User Id=sa;Password=SenhaDbLivros01;TrustServerCertificate=yes");
             });
         }
     }
